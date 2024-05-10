@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --font-family-default: 'Roboto', sans-serif;
+  --font-size-default: 16px;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: var(--font-size-default);
+  font-family: var(--font-family-default);
+}
