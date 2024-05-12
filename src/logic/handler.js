@@ -1,5 +1,8 @@
 import request from '../api/request';
 
-export default function handleSearch(someValue) {
-  request(someValue).then((response) => console.log(response));
+export default function handleSearch(event) {
+  const userInput = event.target.value;
+  if (userInput.trim()) {
+    request(userInput).then((response) => console.log(response));
+  }
 }
