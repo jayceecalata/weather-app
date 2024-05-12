@@ -1,11 +1,8 @@
 import './assets/style.css';
+import handleSearch from './logic/handler';
 
 // if (process.env.NODE_ENV !== 'production') {
 //   console.log("Hello, you're in development mode!");
 // }
 
-import request from './api/request';
-
-request('Manila').then((response) => {
-  console.log(response);
-});
+document.getElementById('js-search').addEventListener('search', handleSearch);
