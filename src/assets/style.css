@@ -15,3 +15,38 @@ body {
   font-size: var(--font-size-default);
   font-family: var(--font-family-default);
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+input {
+  grid-column: span 2;
+  width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font: inherit;
+}
+
+.pane {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.pane:nth-of-type(1),
+.days {
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.days {
+  flex-grow: 1;
+  display: flex;
+}
